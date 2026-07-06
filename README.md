@@ -8,8 +8,10 @@
 
 | | |
 |---|---|
+| **מבצעים** | עדן גלזמן, לין סבאג |
 | **אתר** | **https://defibrillator-field.vercel.app** |
-| **GitHub** | https://github.com/edenglaz/defibrillator-field |
+| **GitHub (עדן)** | https://github.com/edenglaz/defibrillator-field |
+| **GitHub (לין)** | https://github.com/linsabag/defibrillator-field |
 
 ---
 

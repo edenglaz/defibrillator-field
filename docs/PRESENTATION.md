@@ -8,8 +8,9 @@
 
 | | |
 |---|---|
-| **שמות המבצעים** | עדן גלזמן |
-| **GitHub** | https://github.com/edenglaz/defibrillator-field |
+| **שמות המבצעים** | עדן גלזמן, לין סבאג |
+| **GitHub (עדן)** | https://github.com/edenglaz/defibrillator-field |
+| **GitHub (לין)** | https://github.com/linsabag/defibrillator-field |
 | **ענן (Production)** | https://defibrillator-field.vercel.app |
 
 ### שרתי API בענן
@@ -29,8 +30,6 @@
 | הרשמה | https://defibrillator-field.vercel.app/register |
 | Registry | https://defibrillator-field.vercel.app/fleet |
 | אדמין | https://defibrillator-field.vercel.app/admin (micha / 1234) |
-
-> אם עבדתם בזוג — הוסיפו כאן את שם השותף/ה.
 
 ---
 
