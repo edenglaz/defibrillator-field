@@ -10,11 +10,13 @@
 
 | סביבה | כתובת |
 |--------|--------|
-| **אתר (Production)** | `https://YOUR-USERNAME.github.io/defibrillator-field` או `https://defibrillator-field.vercel.app` — **עדכני לאחר העלאה** |
+| **אתר (Production)** | https://defibrillator-field.vercel.app |
+| **GitHub** | https://github.com/edenglaz/defibrillator-field |
+| **API סימולטור (Render)** | https://defibrillator-field.onrender.com/api |
+| **API Auth/CMS (Render)** | https://defi-auth.onrender.com/api |
 | **מקומי (פיתוח)** | http://localhost:3000 |
 
-> **למגישי הפרויקט:** לאחר deploy, החליפי את הכתובת בטבלה למעלה ב-URL האמיתי.  
-> אם העלית רק ל-GitHub Pages / Vercel — צייני גם את כתובות ה-API (3001, 3002) אם הן ב-Render/Railway.
+> **הערה:** שרתי Render (Free) עלולים להירדם אחרי חוסר פעילות — הטעינה הראשונה אחרי שינה עשויה לקחת ~30–50 שניות.
 
 ---
 
@@ -79,7 +81,7 @@ cd "C:\Users\Eden Glazman\Desktop\afeka\defibrillator-field"
 או אחרי clone מ-GitHub:
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/defibrillator-field.git
+git clone https://github.com/edenglaz/defibrillator-field.git
 cd defibrillator-field
 ```
 
@@ -180,7 +182,7 @@ cd defibrillator-field
 git add .
 git commit -m "Initial commit — defibrillator field project"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/defibrillator-field.git
+git remote add origin https://github.com/edenglaz/defibrillator-field.git
 git push -u origin main
 ```
 
@@ -200,8 +202,7 @@ git push -u origin main
 
 לאחר deploy:
 1. הגדירי `NEXT_PUBLIC_AUTH_API` ו-`NEXT_PUBLIC_SIM_API` ב-Vercel
-2. עדכני את טבלת **כתובת בענן** בראש README
-3. וודאי CORS בשרתים כולל את domain של Vercel
+2. עדכני `CORS_ORIGIN` בשני שרתי Render ל-domain של Vercel
 
 ---
 
