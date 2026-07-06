@@ -1,0 +1,11 @@
+{
+  "name": "defibrillator-field",
+  "private": true,
+  "scripts": {
+    "server": "cd server && npm start",
+    "simulator": "cd simulator-server && npm start",
+    "seed": "cd simulator-server && npm run seed",
+    "web": "cd web && npm run dev",
+    "install:all": "cd server && npm install && cd ../simulator-server && npm install && cd ../web && npm install"
+  }
+}
