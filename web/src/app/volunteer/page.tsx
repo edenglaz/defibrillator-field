@@ -67,7 +67,7 @@ export default function VolunteerAppPage() {
       try {
         sessionStorage.setItem(
           DISMISS_KEY,
-          JSON.stringify([...dismissedRef.current])
+          JSON.stringify(Array.from(dismissedRef.current))
         );
       } catch {
         /* ignore */
