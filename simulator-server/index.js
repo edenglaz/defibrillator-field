@@ -14,7 +14,11 @@ const app = express();
 const PORT = process.env.PORT || 3002;
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/defibrillator_field';
 
-app.use(cors({ origin: ['http://localhost:3000', 'http://127.0.0.1:3000'] }));
+const allowedOrigins = process.env.CORS_ORIGIN
+  ? process.env.CORS_ORIGIN.split(',').map((o) => o.trim())
+  : ['http://localhost:3000', 'http://127.0.0.1:3000'];
+
+app.use(cors({ origin: allowedOrigins }));
 app.use(express.json());
 
 app.get('/api/health', (_req, res) => {
