@@ -1,0 +1,53 @@
+רשימה: מה להעלות ל-GitHub בפרויקט Unity (Autumn2025)
+=====================================================
+
+שים את הקובץ .gitignore בשורש תיקיית פרויקט ה-Unity לפני git add.
+
+-----------------------------------------------------
+כן להעלות (חובה / חשוב)
+-----------------------------------------------------
+Assets/                 - סקריפטים, סצנות, prefabs, מודלים, מטריאלים, אודיו
+Assets/**/*.meta        - קבצי .meta ליד כל asset (חובה!)
+ProjectSettings/        - הגדרות הפרויקט
+Packages/               - manifest.json ו-packages-lock.json
+.gitignore              - כדי לא להעלות קבצים מיותרים
+
+אופציונלי אבל בסדר:
+.vsconfig
+README.md
+
+-----------------------------------------------------
+לא להעלות (כבד / נוצר אוטומטית)
+-----------------------------------------------------
+Library/                - הכי גדול; Unity בונה מחדש
+Temp/
+Obj/
+Logs/
+UserSettings/
+Build/  ו- Builds/
+.vs/                    - cache של Visual Studio
+MemoryCaptures/
+Recordings/
+
+קבצים ש-Unity/Visual Studio מייצרים מחדש:
+*.csproj
+*.sln
+*.user
+*.apk / *.aab / *.app   - builds מוכנים
+
+-----------------------------------------------------
+פקודות להעלאה (מהמחשב שלך, בתיקיית הפרויקט)
+-----------------------------------------------------
+1. העתק את .gitignore לשורש הפרויקט (ליד Assets ו-ProjectSettings)
+2. ב-GitHub צור ריפו חדש (מומלץ נפרד, לא defibrillator-field)
+3. הרץ:
+
+   git init
+   git add .
+   git status
+   git commit -m "Initial Autumn2025 Unity project"
+   git branch -M main
+   git remote add origin https://github.com/USERNAME/REPO.git
+   git push -u origin main
+
+ב-git status ודא ש-Library לא מופיע ברשימה להעלאה.
